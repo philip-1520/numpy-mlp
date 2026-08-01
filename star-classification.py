@@ -42,9 +42,9 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 import seaborn as sns
 
-fig = plt.figure(figsize=(10, 8), constrained_layout=True)
+fig = plt.figure(figsize=(12, 6), constrained_layout=True)
 fig.suptitle('Model evaluation', fontsize=20)
-gs = fig.add_gridspec(2, 2)
+gs = fig.add_gridspec(1, 2)
 
 training_plot = fig.add_subplot(gs[0, 0])
 training_plot.plot(training_history['loss'].keys(), training_history['loss'].values(), label='Loss', color='red')
