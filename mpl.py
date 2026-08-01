@@ -88,3 +88,33 @@ class MultilayerPerceptron:
       self.feedforward()
       prediction.append(np.argmax(self.output))
     return prediction
+
+class Layer:
+
+  def __init__(self, size, activation_function=None) -> None:
+
+    self.size = size
+    self.activation_function = activation_function
+
+    self.x = None
+    self.W = None
+    self.b = None
+    self.z = None
+    self.y = np.zeros(size)
+
+  def compute(self) -> None:
+    self.z = (self.x @ self.W) + self.b
+    self.y = self.activation_function.function(self.z)
+
+  def learn(self, grad_signal):
+    delta = grad_signal @ self.activation_function.derivative(self.z)
+
+    grad_w = np.outer(self.x, delta)
+    grad_b = delta
+
+    untrained_weight = self.W
+    self.W -= grad_w
+    self.b -= grad_b
+
+    return untrained_weight @ delta
+    
