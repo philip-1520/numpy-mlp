@@ -1,3 +1,6 @@
+import numpy as np
+rng = np.random.default_rng()
+
 class MultilayerPerceptron:
 
   def __init__(self, layers: list, learning_rate: float, loss_function) -> None:
