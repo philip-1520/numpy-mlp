@@ -1,13 +1,13 @@
-# numpy-mpl
+# numpy-mlp
 Implementação de uma rede neural Multilayer Perceptron (MLP) desenvolvida inteiramente com NumPy, sem utilização de frameworks de Deep Learning como TensorFlow ou PyTorch. O projeto foi estruturado de forma modular para facilitar a compreensão do algoritmo de backpropagation, das funções de ativação e do treinamento por SGD.
 
 ## Estrutura
 ```text
-numpy-mpl/
+numpy-mlp/
 
 │
 
-├── mpl.py
+├── mlp.py
 
 ├── activation_function.py
 
@@ -59,6 +59,8 @@ epochs = 50
 training_history = nn.train(x_train, y_train, epochs)
 ```
 
+O retorno do método train permite inspecionar o aprendizado. Nesse caso, training_history contém o histórico de perda/loss e de classificações corretas em cada época, podendo ser utilizado para geração de gráficos de treinamento
+
 Desempenho da rede no exemplo:
 
 <img width="1200" height="600" alt="Gráfico" src="https://github.com/user-attachments/assets/c1751e0c-8568-4cbb-bda5-78fa3d32e988" />
@@ -80,8 +82,8 @@ A matriz de confusão obtida no conjunto de teste demonstra classificação perf
 - output -> retorna o valor da última camada da rede neural
 - summary -> retorna um dicionário mostrando os valores de cada parâmetro de cada camada
 - feedforward() -> calcula a partir do valor de entrada até a última camada
-- backpropagate(target) -> ajuste os parâmetros da rede neural com SGD a partir do valor de output esperado para o input
-- train(x_train, y_train, epochs) -> passa pelos dados conforme o número de épocas, reajustando os parâmetros a cada amostra
+- backpropagate(target) -> ajusta os parâmetros da rede neural utilizando SGD a partir do valor esperado da saída
+- train(x_train, y_train, epochs) -> passa pelos dados conforme o número de épocas, reajustando os parâmetros a cada amostra e retorna o histórico de aprendizado (perda/loss e quantidade de acertos por época)
 - predict(entry_array) -> retorna o valor que a rede neural prevê a partir de cada um dos dados de entrada sem treinar com os dados
 
 # Layer
