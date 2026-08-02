@@ -58,7 +58,7 @@ epochs = 50
 training_history = nn.train(x_train, y_train, epochs)
 ```
 
-O retorno do método train permite inspecionar o aprendizado. Nesse caso, training_history contém o histórico de perda/loss e de classificações corretas em cada época, podendo ser utilizado para geração de gráficos de treinamento
+O retorno do método train permite inspecionar o aprendizado. Nesse caso, training_history contém o histórico de perda/loss e de classificações corretas em cada época, podendo ser utilizado para geração de gráficos de treinamento.
 
 Desempenho da rede no exemplo:
 
