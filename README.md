@@ -89,11 +89,11 @@ A matriz de confusão obtida no conjunto de teste demonstra classificação perf
 ## Propriedades
 - size -> quantidade de neurônios
 - activation_function -> função de ativação utilizada para transformar os logits em saída
-- x -> valor de entrada
+- x -> valor de entrada/entry
 - W -> matriz de pesos m x n, sendo m a quantidade de neurônios da camada anterior e n a quantidade de neurônios da camada atual
-- b -> valor dos pesos
+- b -> valor dos vieses/biases
 - z -> valor dos logits
-- y -> valor de saída
+- y -> valor de saída/output
 
 ## Métodos
 - compute(): atualiza a saída a partir dos valores de entrada
