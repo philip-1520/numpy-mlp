@@ -3,12 +3,19 @@ Implementação de uma rede neural Multilayer Perceptron (MLP) desenvolvida inte
 
 ## Estrutura
 numpy-mpl/
+
 │
+
 ├── mpl.py
+
 ├── activation_function.py
+
 ├── loss_function.py
+
 ├── star-classification.py
+
 ├── data-stars.csv
+
 └── README.md
 
 ## Funcionalidades
