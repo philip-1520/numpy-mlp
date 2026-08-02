@@ -26,7 +26,6 @@ numpy-mlp/
 - Backpropagation implementado manualmente
 - Funções de ativação modulares
     - ReLU
-    - Sigmoid
     - Softmax
 - Funções de perda modulares
     - Sparse Categorical Crossentropy
