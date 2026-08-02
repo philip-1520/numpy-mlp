@@ -2,6 +2,7 @@
 Implementação de uma rede neural Multilayer Perceptron (MLP) desenvolvida inteiramente com NumPy, sem utilização de frameworks de Deep Learning como TensorFlow ou PyTorch. O projeto foi estruturado de forma modular para facilitar a compreensão do algoritmo de backpropagation, das funções de ativação e do treinamento por SGD.
 
 ## Estrutura
+```text
 numpy-mpl/
 
 │
@@ -17,7 +18,7 @@ numpy-mpl/
 ├── data-stars.csv
 
 └── README.md
-
+```
 ## Funcionalidades
 - Implementação completa de MLP utilizando apenas NumPy
 - Inicialização de pesos com He Initialization
@@ -34,7 +35,7 @@ numpy-mpl/
 
 ## Exemplo
 
-Como demonstração foi utilizada uma base de classificação de estrelas a partir do dataset data-stars.csv retirado do repositório: https://github.com/suaide/PGF539
+Como demonstração foi utilizada uma base de classificação de estrelas a partir do dataset data-stars.csv retirado do repositório: https://github.com/suaide/PGF5393
 
 Cada estrela é descrita por quatro atributos físicos, e a rede deve classificá-la em uma das seguintes categorias:
 
