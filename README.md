@@ -1,6 +1,16 @@
 # numpy-mpl
 Implementação de uma rede neural Multilayer Perceptron (MLP) desenvolvida inteiramente com NumPy, sem utilização de frameworks de Deep Learning como TensorFlow ou PyTorch. O projeto foi estruturado de forma modular para facilitar a compreensão do algoritmo de backpropagation, das funções de ativação e do treinamento por SGD.
 
+## Estrutura
+numpy-mpl/
+│
+├── mpl.py
+├── activation_function.py
+├── loss_function.py
+├── star-classification.py
+├── data-stars.csv
+└── README.md
+
 ## Funcionalidades
 - Implementação completa de MLP utilizando apenas NumPy
 - Inicialização de pesos com He Initialization
@@ -45,6 +55,10 @@ Desempenho da rede no exemplo:
 
 <img width="1200" height="600" alt="Gráfico" src="https://github.com/user-attachments/assets/c1751e0c-8568-4cbb-bda5-78fa3d32e988" />
 
+O treinamento converge rapidamente, reduzindo continuamente a função de perda enquanto aumenta a quantidade de classificações corretas.
+
+A matriz de confusão obtida no conjunto de teste demonstra classificação perfeita para todas as classes do exemplo utilizado. O desempenho apresentado refere-se ao conjunto de dados utilizado como exemplo e pode variar conforme a divisão entre treinamento e teste e os hiperparâmetros empregados.
+
 # MultilayerPerceptron
 
 ## Propriedades
@@ -66,7 +80,7 @@ Desempenho da rede no exemplo:
 
 ## Propriedades
 - size -> quantidade de neurônios
-- activation_fuction -> função de ativação utlizada para transformar os logits em saída
+- activation_function -> função de ativação utlizada para transformar os logits em saída
 - x -> valor de entrada
 - W -> matrix de pesos m x n, sendo m a quantidade de neurônios da camada anterior e n a quantidade de neurônios da camada atual
 - b -> valor dos pesos
