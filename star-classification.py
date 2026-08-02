@@ -57,9 +57,9 @@ y_pred = nn.predict(x_test)
 label_pred = enc.inverse_transform(y_pred)
 cm = confusion_matrix(y_test, label_pred)
 classes = enc.classes_
-matriz_plot = fig.add_subplot(gs[0, 1])
-sns.heatmap(cm, ax=matriz_plot, annot=True, cmap='Blues', xticklabels=classes, yticklabels=classes)
-matriz_plot.set_ylabel('True')
-matriz_plot.set_xlabel('Predicted')
+matrix_plot = fig.add_subplot(gs[0, 1])
+sns.heatmap(cm, ax=matrix_plot, annot=True, cmap='Blues', xticklabels=classes, yticklabels=classes)
+matrix_plot.set_ylabel('True')
+matrix_plot.set_xlabel('Predicted')
 
 plt.show()
